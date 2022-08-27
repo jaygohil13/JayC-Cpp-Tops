@@ -25,11 +25,12 @@ int main()
 	return 0;
 	*/
 	
+	
 //	A a;
 //  a.show();
 	
-	B b;
-	b.show();
+//	B b;
+//	b.show();
 	
 	return 0;
 	
