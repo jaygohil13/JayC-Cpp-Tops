@@ -1,0 +1,12 @@
+SDLC
+
+Software Development Lifecycle.
+
+6 processes
+
+1) Requirement
+2)Analysis
+3)Designing
+4)Development
+5)Testing
+6)Maintenance.

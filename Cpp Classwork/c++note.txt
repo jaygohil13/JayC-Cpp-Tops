@@ -1,0 +1,35 @@
+1) 
+
+C -> It is POP (Procedural Oriented Programming).
+
+C + Class -> C++.
+
+C ++ -> It is POP and OOP. (Object Oriented Programming).
+
+2)
+ C supports 32 keywords.
+ C++ supports 63/64 keywords.
+
+3) 
+ C does not support method overloading.
+ C++ support method overloading.
+
+
+
+C++
+
+cout -> It is use to display output on the screen.  i.e output
+cin  -> It is use to accept data on the screen.     i.e input
+
+Class ->  It is a collection of Data Members,Data Functions,etc.
+
+Object -> It is an real world entity.
+
+
+
+
+
+
+
+
+	

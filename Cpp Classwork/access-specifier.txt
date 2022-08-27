@@ -1,0 +1,6 @@
+3 Access specifiers in class
+
+1) public. -> accessible outside the class also.
+2) private. -> accessible within the class only. 
+3) protected.-> acessible within class and to the 		sub-class.
+

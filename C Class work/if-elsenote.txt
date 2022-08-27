@@ -1,0 +1,125 @@
+Conditional Statements :
+
+	1) Simple if
+	2) if/else
+	3) nested if/else
+	4) ladder if/else
+	5) switch statements
+
+
+	1) Simple If: 
+			Syntax:  if(condition)
+				{
+					statements;
+				}
+	
+	2) if/else :
+			Syntax : if(condtion)
+				 {
+					statements;
+				 }
+				else
+				{
+					statements;
+				}
+	
+	3) Nested if/else:
+				
+			Syntax:
+				if(condition)
+				{
+					if(condition)
+					{
+						statement;
+					}
+					else
+					{
+						statement;
+					}	
+				}
+				else
+				{
+					if(condition)
+					{
+						statement;
+					}
+					else
+					{
+						statement;
+					}	
+					
+				}				
+			
+
+	4) Ladder if/else:
+
+			Syntax :
+				 if(condition)
+				{
+					statement;
+				}
+				else if(condition)
+				{
+					statement;	
+				}
+				else if(condition)
+				{
+					statement;
+				}
+				else if(condition)
+				{
+					statement;	
+				}
+				else
+				{
+					statement;
+				}
+
+	5) Switch statement:
+
+			syntax:
+				 switch(condition)
+				{
+				   	case 1: statement;
+						break;
+					case 2: statement;
+						break;	
+					case 3: statement;
+						break;
+					case 4: statement;
+						break;
+					default:statement;
+						break;		
+				}		
+			
+
+
+
+				
+				
+			
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+	
+				
+
+
+
+
+
+
+
+

@@ -1,0 +1,31 @@
+
+	DataTypes. : Built in DataTypes.
+
+	there are 4 DT
+
+				keyword	         Size	   Format Specifier	
+				
+	1) Integer    		int 		4 Bytes      %d
+	2) Character		char		1 Bytes	     %c
+	3) Float		float		4 Bytes      %f
+	4) Double		double		8 Bytes	     %lf
+
+	Variables: It is a name at Memory location to store data of different
+		   types.
+
+	Rules for Creating a Variable
+
+	1) First Character should not be a Digit. e.g 1a -> no; a1 - >yes;
+	2) No special Character used. except _$
+	3) Variable name is case sensitive.int a,A
+		
+It followsa ASCII Rule; American Standard Code for Information Interchange
+		
+
+
+	
+
+
+
+
+

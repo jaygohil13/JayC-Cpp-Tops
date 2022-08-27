@@ -1,0 +1,9 @@
+
+	Operators in  C
+
+	1) Arithmetic Operators: +,-,/,*
+	2)Relational Operators: >,<,>=,<=,==
+	3)Assignment Operator: +=,-=,/=,*=  ,  a+=b;  a = a+b; a-=b;  a = a-b;
+	4)Unary Operator : Increment/Decrement.
+	5)Ternary Operator--  it is an alternative of if/else
+	6) Logical operator: &&,||,!
