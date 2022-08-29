@@ -26,11 +26,11 @@ int main()
 	*/
 	
 	
-//	A a;
-//  a.show();
+	A a;
+  a.show();
 	
-//	B b;
-//	b.show();
+	B b;
+	b.show();
 	
 	return 0;
 	

@@ -5,7 +5,7 @@ using namespace std;
 class Ashish{
 	private:
 		int money;
-		friend int jay(Ashish);
+		friend int Jay(Ashish);
 		public:
 			Ashish()
 			{
@@ -17,12 +17,11 @@ int Jay(Ashish a)
 	a.money = 10000;
 	return a.money;
 }
- 
-
 
 int main()
 {
 	Ashish a1;
-	cout<<"Money Given :"<<jay(a1);
+	cout<<"Money Given :"<<Jay(a1);
+	
 	return 0;
 }

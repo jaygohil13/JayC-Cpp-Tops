@@ -32,7 +32,9 @@ class cube:public side
 };
 int main()
 {
+	
 	square s;
+	
 	s.set_values(10);
 	cout<<"The square value is::"<<s.sq()<<endl;
 	
