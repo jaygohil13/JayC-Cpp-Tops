@@ -21,6 +21,7 @@ class box{
 		height = h;
 		depth = d;
 	}
+	
 	box(const box &obj)
 	{
 		cout<<"Copy Constructor Called :"<<endl;
@@ -29,8 +30,8 @@ class box{
 		depth = obj.depth;
 	}
 	void volume()
-	{
-		cout<<"Volume = "<<(width*height*depth)<<endl;
+    {
+		cout<<"Volume = "<<(width*height*depth)<<endl<<endl<<endl;
 	}
 };
 

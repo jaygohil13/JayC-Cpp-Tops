@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	string kan = "Kamal";
-	string ishq = "Hasan";
+	string ishq = " Hasan";
 	
 	string str1;
 	int len;
