@@ -15,7 +15,7 @@ int main()
 	
 	cout<<add<int>(5,7)<<endl<<endl;
 	cout<<add<float>(6.3f,47.6f)<<endl<<endl;
-	//cout<<add<string>("jay","kanishk")<<endl<<endl;
+	cout<<add<string>("jay"," kanishk")<<endl<<endl;
 	cout<<"Enter your string :";
 	getline(cin,str);
 	
