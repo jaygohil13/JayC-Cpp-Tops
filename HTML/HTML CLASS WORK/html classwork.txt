@@ -1,0 +1,19 @@
+URL : uniform resource locater.
+       :universal resource locator.
+https ://www.tops-int.com
+
+http:hypertext transfer protocol.
+www: world wide web
+tops-int : domain name
+.com :extension
+
+browser : client - server - internet
+
+Web designing
+HTML :  Structure
+HTML5 : Structure
+CSS : Decorate
+CSS3 : Beautify
+Javascript: Behaviour
+Jquery :Behaviour
+Bootstrap : CSS framework
