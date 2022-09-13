@@ -3,8 +3,7 @@ URL : uniform resource locater.
 https ://www.tops-int.com
 
 http:hypertext transfer protocol.
-www: world wide web
-tops-int : domain name
+www: world wide web tops-int : domain name
 .com :extension
 
 browser : client - server - internet
