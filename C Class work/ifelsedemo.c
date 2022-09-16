@@ -7,11 +7,11 @@ void main()
 	scanf("%d",&a);	
 	if(a > 0)
 	{
-			printf("%d is +ve",a);
+			printf("%d is +Positive",a);
 	}
 	else
 	{
-			printf("%d is -ve",a);
+			printf("%d is -Negative",a);
 	}
 	
 }
