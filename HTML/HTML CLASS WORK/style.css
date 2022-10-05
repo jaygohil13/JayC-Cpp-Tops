@@ -14,5 +14,10 @@ img{
     margin-right: auto;
     height: 300px;
     width: 300px;
-    
+}
+h1:hover{
+    color: gray;
+}
+span:hover{
+    color: aqua;
 }

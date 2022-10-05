@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url(https://png.pngtree.com/thumb_back/fh260/background/20200714/pngtree-modern-double-color-futuristic-neon-background-image_351866.jpg);
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            backdrop-filter: blur(5px);
+        }
+
+        td{
+            font-size: 20px;
+            font-family: cursive;
+            text-transform: capitalize;
+            border: 5px double;
+            padding: 10px;
+            color: black;
+        }
+
+        table{
+            border: 5px solid;
+        }
+
+        h1{
+            color:aqua;
+            font-size: 30px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-transform: uppercase;
+            word-spacing: 5px;
+            text-indent: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 align="center">REGISTRATION FORM</h1>
+    <table align="center" border="1" cellspacing="10" cellpadding="10">
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" placeholder="first and last name"></td>
+        </tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="email" placeholder="xyz@gmail.com"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" placeholder="********123"></td>
+        </tr>
+        <tr>
+            <td>Bio:</td>
+            <td><textarea name="Bio"></textarea></td>
+        </tr>
+        <tr>
+            <td>Photo:</td>
+            <td><input type="file" name="photo"></td>
+        </tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name="Gender" value="Male">Male
+                <input type="radio" name="Gender" value="Female">Female
+            </td>
+        </tr>
+        <tr>
+            <td>Language:</td>
+            <td>
+                <input type="checkbox" name="lan" value="Gujrati">Gujrati
+                <input type="checkbox" name="lan" value="Hindi">Hindi
+                <input type="checkbox" name="lan" value="English">English
+            </td>
+        </tr>
+        <tr>
+            <td>Country:</td>
+            <td><select name="country">
+                <option value="India">India</option>
+                <option value="America">America</option>
+                <option value="Uk">Uk</option>
+                <option value="Germany">Germany</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2"><input type="submit" value="Register" name="submit">
+            <input type="reset" value="Reset" name="reset"></td>
+        </tr>
+    </table>
+</body>
+</html>
