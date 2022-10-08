@@ -27,3 +27,70 @@ XAMPP:cross platfom-apache server-Mysql Database -PHP,pearl,python..language
 3.  CREATE TABLE person (pid int PRIMARY KEY AUTO_INCREMENT,name varchar(50),email(50))
 4.  ALTER TABLE person ADD (address varchar(50),bio varchar(50))
 5.  ALTER TABLE person MODIFY number int
+
+6.INSERT INTO `person` (`pid`, `name`, `email`, `address`, `number`) VALUES ('1', 'Jay', 'jay@gmail.com', 'CG Road', '635930886');
+7.INSERT INTO `person` (`pid`, `name`, `email`, `address`, `number`) VALUES ('2', 'Ashish', 'ashish@gmail.com', 'naroda', '565234167');
+8.UPDATE person SET name="Urvashi",email="urvashi@gmail.com",address="kodinar" WHERE pid=2
+9.INSERT INTO `person` (`pid`, `name`, `email`, `address`, `number`) VALUES (NULL, NULL, 'ashish@gmail.com', 'naroda', '598652546');
+10.UPDATE person SET name="Tk",email="Tk@gmail.com",address="kodinar",number=922733160 WHERE pid=3
+
+11.SELECT * FROM person
+12.SELECT * FROM `person` WHERE pid=1
+13.SELECT name,email from person
+
+14.SELECT email FROM person where name='jay'
+
+15.DELETE FROM person WHERE pid=3
+16.DELETE FROM person WHERE pid=1;
+commit;
+17.DELETE from person WHERE pid=1;
+ROLLBACK;
+18.TRUNCATE TABLE person
+19.DELETE FROM person
+20.DROP TABLE person
+
+21.CREATE TABLE country (cid int PRIMARY KEY AUTO_INCREMENT,cname varchar(50))
+22.CREATE TABLE person (pid int AUTO_INCREMENT,pname varchar(50),PASSWORD varchar(50),
+country int,PRIMARY KEY(pid),FOREIGN KEY(country)REFERENCES country(cid))
+
+23.CREATE TABLE salary(sid int PRIMARY KEY AUTO_INCREMENT,salary int)
+24.CREATE TABLE emp(emp_id int AUTO_INCREMENT,name varchar(50),email varchar(50),salary int, PRIMARY KEY(emp_id),FOREIGN KEY(salary) REFERENCES salary(sid))
+
+***JOIN:
+.Inner join
+.Outer join
+      -left outer join
+      -right outer join
+
+25.SELECT * from emp JOIN salary on emp.salary=salary.sid
+26.SELECT emp.name,email,salary.salary from emp JOIN salary on emp.salary=salary.sid
+27.SELECT * from emp LEFT JOIN salary on emp.salary=salary.sid
+28.SELECT * from emp RIGHT JOIN salary on emp.salary=salary.sid;
+
+
+** SQL Aggrigate Functions:
+ .min()
+ .max()
+ .avg()
+ .count()
+ .sum()
+
+1.SELECT MAX(salary) as new_salary FROM salary;
+2.SELECT MIN(salary) as MIN_salary FROM salary;
+3.SELECT AVG(salary) as AVG_salary FROM salary;
+4.SELECT sum(salary) as SUM_salary FROM salary;
+5.SELECT COUNT(salary) as COUNT_salary FROM salary;
+
+
+
+
+
+
+DBMS : database management system
+RDBMS: Relational database management system
+Normalization:1st NF,2nd NF,3rd NF
+
+Constraints: keys
+* primary key: always int,uniquly identify,never allow null values
+* Unique key:it's allow null value,used for uniquly identify
+* Foreign key/Index key:duplicate key

@@ -1,0 +1,15 @@
+span{
+    color: beige;
+    background-color:dimgray;
+}
+h1{
+    color: crimson;
+    text-align: center;
+}
+img{
+    width: 20%;
+    height: 20%;
+}
+h1:hover{
+    color: gray;
+}

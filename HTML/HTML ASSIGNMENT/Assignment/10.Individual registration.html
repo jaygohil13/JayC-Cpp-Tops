@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: red;
+            border: 5px groove;
+            background: linear-gradient(lightgreen, lightpink, skyblue, rgb(255, 158, 255), skyblue);
+            margin-top: -10px;
+            font-family: sans-serif;
+        }
+        h2 {
+            color: red;
+        }
+        td {
+            color: rgb(16, 16, 233);
+        }
+        p {
+            color: blue;
+        }
+        span {
+            color: red;
+        }
+        table {
+            margin: auto;
+        }
+        .one {
+            margin-left: 250px;
+            margin-right: 50px;
+        }
+        .two {
+            margin-left: -70px;
+        }
+        .three {
+            margin-left: 635px;
+            margin-top: -50px;
+        }
+        .four {
+            margin-left: 250px;
+        }
+        .five {
+            margin-top: 50px;
+        }
+        .six {
+            background-color: rgb(162, 250, 250);
+            padding-left: 5px;
+        }
+        .border-blue {
+            border-color: rgb(163, 163, 247);
+        }
+        .lblmargin {
+            text-align: right;
+            padding-right: 10px;
+        }
+        
+    </style>
+
+<body>
+    <h1>Individual Registration</h1>
+    <div class="six">
+        
+        <h2>User Particulars</h2>
+
+        <table align="center">
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Login ID</b></td>
+                <td><input class="border-blue" type="ID" name="ID"></td>
+            </tr>
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Password</b></td>
+                <td><input class="border-blue" type="password" name="pwd"></td>
+            </tr>
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Confirm Password</b></td>
+                <td><input class="border-blue" type="password" name="pwd"></td>
+            </tr>
+        </table>
+
+        <h2><b>Personal Particulars</b></h2>
+
+        <table align="left" class="one">
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Salutation:</b></td>
+                    <td>
+                        <select>
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="mr">Mr</option>
+                        <option value="mrs">Mrs</option>
+                        <option value="Ms">Ms</option>
+                        <option value="Ms">Dr</option>
+                        </select>
+                 </td>
+            </tr>
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Middle Name:</b></td>
+                <td><input class="border-blue" type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>
+                    <span>*</span><b>Resident Status</b>
+                </td>
+                <td>
+                    <select>
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="ROR">ROR</option>
+                        <option value="RNOR">RNOR</option>
+                        <option value="NR">NR</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Email Id</b></td>
+                <td><input class="border-blue" type="email" name="email"></td>
+            </tr>
+        </table>
+
+        <table class="two">
+            <tr>
+                <td class="lblmargin"><span>*</span><b>First Name</b></td>
+                <td><input class="border-blue" type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Last Name</b></td>
+                <td><input class="border-blue" type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Country</b></td>
+                <td>
+                    <select name="country">
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="India">India</option>
+                        <option value="UK">UK</option>
+                        <option value="Germany">Germany</option>
+                        <option value="USA">USA</option>
+                        <option value="Japan">Japan</option>
+                        <option value="China">China</option>
+                        <option value="Australia">Australia</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Mobile Number</b></td>
+                <td><input class="border-blue" type="text" name="number"></td>
+            </tr>
+
+        </table>
+
+        <h2>Account Particulars</h2>
+        <table align="center" class="four">
+            <tr>
+                <td class="lblmargin"><span>*</span><b>15 Digit Account No</b></td>
+                <td><input class="border-blue" type="text" name="number"></td>
+            </tr>
+
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Fund Transfer</b></td>
+                <td><select>
+                        <option value="" disabled selected hidden>Select</option>
+                        <option value="NEFT">NEFT</option>
+                        <option value="RTGS">RTGS</option>
+                        <option value="ECS">ECS</option>
+                        <option value="IMPS">IMPS</option>
+                    </select></td>
+            </tr>
+        </table>
+
+        <table class="three">
+            <tr>
+                <td class="lblmargin"><span>*</span><b>Nick Name</b></td>
+                <td><input class="border-blue" type="text" name="name"></td>
+            </tr>
+        </table>
+
+
+        <h2 class="five">DECLARATION</h2>
+        <p><strong>I have read, understood and hereby agree to the Terms and Conditions in respect of all products and
+                channels.</strong></p>
+        <p><strong>I understand that any changes in the terms and conditions applicable to this relationship would be
+                made
+                available to me on requestat any IOB branches.I confirm that all accounts under this login name are
+                operated
+                singly and in case of joint account operated by either or survivor/anyone or survivor(s) underhis/her
+                joint
+                name
+                respectively.I do hereby declare that information furnished in this form is true to the best of my
+                knowledge
+                and
+                belief.</strong>
+        </p>
+
+        <table align="center">
+            <tr>
+                <td align="center"><input class="border-blue" style="background: blue; color: white;" type="submit"
+                        value="Submit" name="submit">
+                    <input class="border-blue" style="background: blue; color: white;" type="reset" value="Reset"
+                        name="reset">
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
