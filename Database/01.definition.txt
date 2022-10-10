@@ -1,0 +1,147 @@
+Definition:
+
+DATABASE - A database is an organized collection of data, so that it can be easily accessed and managed.
+	     We can organize data into tables, rows, columns, and index it to make it easier to find relevant information.
+
+NORMALIZATION - It is the process of organizing data in a database. 
+		This includes creating tables and establishing relationships between those tables according to rules designed both to protect the data and 
+		to make the database more flexible by eliminating redundancy and inconsistent dependency.
+
+MF Cod Rule of RDBMS Systems:
+
+1.Rule zero:
+
+This rule states that for a system to qualify as an RDBMS, it must be able to manage database entirely through the relational capabilities.
+
+2.Rule 1 : Information rule
+
+All information(including metadata) is to be represented as stored data in cells of tables. The rows and columns have to be strictly unordered.
+
+3.Rule 2 : Guaranted Access
+
+Each unique piece of data(atomic value) should be accesible by : Table Name + Primary Key(Row) + Attribute(column).
+
+4.Rule 3 : Systematic treatment of NULL
+
+Null has several meanings, it can mean missing data, not applicable or no value. It should be handled consistently. Also, Primary key must not be null, ever. 
+Expression on NULL must give null.
+
+5.Rule 4 : Active Online Catalog
+
+Database dictionary(catalog) is the structure description of the complete Database and it must be stored online. The Catalog must be governed by same rules as rest of the database. 
+The same query language should be used on catalog as used to query database.
+
+6.Rule 5 : Powerful and Well-Structured Language 
+
+One well structured language must be there to provide all manners of access to the data stored in the database. Example: SQL, etc. 
+If the database allows access to the data without the use of this language, then that is a violation.
+
+7.Rule 6 : View Updation Rule
+
+All the view that are theoretically updatable should be updatable by the system as well.
+
+8.Rule 7 : Relational Level Operation
+
+There must be Insert, Delete, Update operations at each level of relations. Set operation like Union, Intersection and minus should also be supported.
+
+9.Rule 8 : Physical Data Independence
+
+The physical storage of data should not matter to the system. If say, some file supporting table is renamed or moved from one disk to another, it should not effect the application.
+
+10.Rule 9 : Logical Data Independence
+
+If there is change in the logical structure(table structures) of the database the user view of data should not change. 
+If a table is split into two tables, a new view should give result as the join of the two tables. This rule is most difficult to satisfy.
+
+11.Rule 10 : Integrity Independence
+
+The database should be able to enforce its own integrity rather than using other programs. Key and Check constraints, trigger etc, should be stored in Data Dictionary. 
+This also make RDBMS independent of front-end.
+
+12.Rule 11 : Distribution Independence
+
+A database should work properly regardless of its distribution across a network. 
+Even if a database is geographically distributed, with data stored in pieces, the end user should get an impression that it is stored at the same place. 
+This lays the foundation of distributed database.
+
+13.Rule 12 : Nonsubversion Rule
+
+If low level access is allowed to a system it should not be able to subvert or bypass integrity rules to change the data. This can be achieved by some sort of looking or encryption.
+
+DATA REDUNDANCY:
+
+Data redundancy is a condition created within a database or data storage technology in which the same piece of data is held in two separate places.
+It can occur by accident but is also done deliberately for backup and recovery purposes.
+
+DDL Interpreter(Data Definition Language):
+
+It interprets DDL statements and record them in the tables containing metadata.
+
+DML Compiler(Data Manipulation Language):
+
+It is a computer programming language used for adding (inserting), deleting, and modifying (updating) data in a database
+
+Save Point:
+
+It is used for dividing (or) breaking a transaction into multiple units so that the user has a chance of roll backing the transaction up to a specified point.
+
+Trigger:
+
+A trigger is a named database object that is associated with a table, and that activates when a particular event occurs for the table.
+
+Creating of Trigger:
+
+CREATE [OR REPLACE ] TRIGGER trigger_name  
+ON table_name   
+WHEN (condition)   
+DECLARE 
+   Declaration-statements 
+BEGIN  
+   Executable-statements 
+EXCEPTION 
+   Exception-handling-statements 
+END; 
+
+
+Difference betwwen DBMS and RDBMS:
+
+               DBMS	                                                                                    		RDBMS
+* DBMS stores data as file.                                              		* RDBMS stores data in tabular form.
+* Data elements need to access individually.	      		* Multiple data elements can be accessed at the same time.
+* No relationship between data.  	                       		* Data is stored in the form of tables which are related to each other.
+* Normalization is not present.	                                                * Normalization is present.
+* DBMS does not support distributed database.	     		* RDBMS supports distributed database.
+* It stores data in either a navigational or hierarchical form.		* It uses a tabular structure where the headers are the column names, and the rows contain corresponding values.
+* It deals with small quantity of data.				* It deals with large amount of data.
+* Data redundancy is common in this model.			* Keys and indexes do not allow Data redundancy.
+* It is used for small organization and deal with small data.		* It is used to handle large amount of data.
+* It supports single user.					* It supports multiple users.
+* Data fetching is slower for the large amount of data.		* Data fetching is fast because of relational approach.
+* The data in a DBMS is subject to low security levels                          * There exists multiple levels of data security in a RDBMS.
+with regards to data manipulation.	
+* Low software and hardware necessities.			* Higher software and hardware necessities.
+* Examples: XML, Window Registry, etc.		 	* Examples: MySQL, PostgreSQL, SQL Server, Oracle, Microsoft Access etc.
+
+SQL Key Constraints:
+
+SQL constraints are used to specify rules for the data in a table.
+
+Constraints are used to limit the type of data that can go into a table. 
+This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, the action is aborted.
+
+Example of SQL Key Constraints:
+
+1.Primary Key
+2.Foreign Key
+3.Unique Key
+4.Check
+5.Default
+
+
+
+
+
+
+
+
+

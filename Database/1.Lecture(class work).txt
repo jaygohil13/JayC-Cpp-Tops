@@ -66,6 +66,19 @@ country int,PRIMARY KEY(pid),FOREIGN KEY(country)REFERENCES country(cid))
 26.SELECT emp.name,email,salary.salary from emp JOIN salary on emp.salary=salary.sid
 27.SELECT * from emp LEFT JOIN salary on emp.salary=salary.sid
 28.SELECT * from emp RIGHT JOIN salary on emp.salary=salary.sid;
+29.DELIMITER //
+CREATE PROCEDURE new_pro()
+BEGIN
+SELECT * FROM person;
+END;
+30.DELIMITER //
+CREATE PROCEDURE tops_cursor()
+BEGIN
+DECLARE whatever boolean DEFAULT false;
+DECLARE cs1 CURSOR for SELECT pname from person;
+end //
+31.CREATE TRIGGER ins_sum BEFORE INSERT ON person
+   FOR EACH ROW SET @sum = @sum + NEW.country;
 
 
 ** SQL Aggrigate Functions:
