@@ -1,0 +1,31 @@
+* CREATE TABLE salesperson(SNO int PRIMARY KEY AUTO_INCREMENT,SNAME varchar(50),CITY varchar(50),COMM decimal)
+
+  INSERT INTO salesperson(SNAME,CITY,COMM)VALUES
+ ('Peel','London',0.12),
+ ('Serres','San Jose',0.13),
+ ('Axelrod','New York',0.10),
+ ('Motika','London',0.11),
+ ('Rafkin','Barcelona',0.15);
+
+
+* CREATE TABLE customer(CNM int PRIMARY KEY AUTO_INCREMENT,CNAME varchar(50),CITY varchar(50),RATING int,SNO int,FOREIGN KEY(SNO) REFERENCES salesperson (SNO));
+
+  INSERT INTO customer(CNM,CNAME,CITY,RATING,SNO)VALUES
+ (201,'Holfman','London',100,1001),
+ ('Giovanne','Rome',200,1003),
+ ('Liu','San Jose',300,1002),
+ ('Grass','Barcelona',100,1002),
+ ('Clemens','London',300,1007),
+ ('Pereira','Rome',100,1004);
+
+b) SELECT SNAME,CITY FROM salesperson
+    WHERE CITY='London' and COMM > 0.12
+
+c) SELECT * FROM salesperson
+    WHERE CITY = 'Barcelona' OR CITY = 'London'
+
+d) SELECT * FROM salesperson
+    WHERE COMM BETWEEN 0.10 AND 0.12
+
+e) SELECT * FROM customer
+    WHERE RATING > 100 and CITY!='ROME'
