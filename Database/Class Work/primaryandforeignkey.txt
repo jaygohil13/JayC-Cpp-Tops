@@ -1,0 +1,11 @@
+CREATE TABLE salary(sid int PRIMARY KEY AUTO_INCREMENT,salary int)
+CREATE TABLE emp(emp_id int AUTO_INCREMENT,name varchar(50),email varchar(50),salary int,PRIMARY KEY(emp_id),FOREIGN KEY(salary) REFERENCES salary(sid))
+SELECT * FROM emp JOIN salary on emp.salary = salary.sid
+SELECT emp.name,email,salary.salary FROM emp JOIN salary on emp.salary = salary.sid
+SELECT * from emp LEFT JOIN salary on emp.salary = salary.sid
+SELECT * FROM emp RIGHT JOIN salary on emp.salary = salary.sid
+JOIN:
+1.INNER JOIN
+2.OUTER JOIN
+            * LEFT OUTER JOIN
+            * RIGHT OUTER JOIN

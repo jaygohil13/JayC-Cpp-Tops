@@ -1,0 +1,15 @@
+1.DELIMITER //
+CREATE PROCEDURE HELLO_pro()
+BEGIN
+SELECT * FROM person;
+END//
+
+2.DELIMITER //
+CREATE PROCEDURE tops_cursor()
+BEGIN
+DECLARE whatever BOOLEAN DEFAULT FALSE;
+DECLARE cs1 cursor for SELECT name from person;
+end //
+
+3.CREATE TRIGGER ins_sum BEFORE INSERT ON person
+FOR EACH ROW SET @sum = @sum + NEW.number;

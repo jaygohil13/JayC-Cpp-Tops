@@ -1,0 +1,7 @@
+DELIMITER //
+Create Trigger after_insert_details  
+AFTER INSERT ON view_info FOR EACH ROW  
+BEGIN  
+INSERT INTO employee_detail VALUES (new.employee_id, new.first_name,   
+new.last_name, new.salary, new.joining_date, new.department, CURTIME());  
+END //  

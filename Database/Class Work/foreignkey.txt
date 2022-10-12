@@ -1,0 +1,2 @@
+CREATE TABLE country (cid int PRIMARY KEY AUTO_INCREMENT,cname varchar(50))
+CREATE TABLE people (pid int AUTO_INCREMENT,pname varchar(50),password varchar(50),country int,PRIMARY KEY(pid), FOREIGN KEY(country) REFERENCES country(cid))

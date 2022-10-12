@@ -1,0 +1,5 @@
+1. CREATE DATABASE 8Sep_SE
+2. CREATE TABLE customer(cust_id int PRIMARY KEY AUTO_INCREMENT,name varchar(50),address varchar(50))
+3. CREATE TABLE person (pid int PRIMARY KEY AUTO_INCREMENT,name varchar(50),email varchar(50))
+4. ALTER TABLE person ADD (address varchar(50),bio varchar(50))
+5. ALTER TABLE person MODIFY number int

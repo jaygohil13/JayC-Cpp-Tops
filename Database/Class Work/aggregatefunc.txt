@@ -1,0 +1,12 @@
+SQL Aggregate Function:
+1.MIN()
+2.MAX()
+3.AVG()
+4.SUM()
+5.COUNT()
+
+SELECT MAX(salary) as New_Salary FROM salary
+SELECT MIN(salary) as Min_Salary FROM salary;
+SELECT AVG(salary) as Avg_Salary FROM salary;
+SELECT SUM(salary) as Sum_Salary FROM salary;
+SELECT COUNT(salary) as Count_Salary FROM salary;

@@ -1,0 +1,8 @@
+DBMS : Database Management System
+RDBMS : Relational Database Management System
+Normalization : 1st NF, 2nd NF, 3rd NF
+
+Constraints = Keys
+1. Primary key : always int, uniquely identify, never allow null values
+2. Unique key : allows null value, uniquely identify
+3. Foreign  key \ Index key : duplicate key
